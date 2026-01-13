@@ -89,24 +89,58 @@
         <p style="margin-left: 20px;">Check my <a href="https://scholar.google.com/citations?user=AHrmIgYAAAAJ&hl=zh-CN">Google Scholar</a> for the most updated list of publications.</p>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="LD_stop()" onmouseover="LD_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='LD_image'>
-                  <img src='images/mi.gif' width="220"></div>
-                <img src='images/mi.gif' width="220">
+            <td style="padding:20px;width:45%;vertical-align:middle">
+              <div style="width: 420px;">
+                <video width="420" muted autoplay loop playsinline>
+                  <source src="images/contextanyone.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
               </div>
+            </td>
+            <td style="padding:0px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2403.20193">
+                <papertitle>ContextAnyone: Context-Aware Diffusion for Character-Consistent Text-to-Video Generation</papertitle>
+              </a>
+              <br>
+              
+              <strong>Ziyang Mai</strong>,
+              Yu-Wing Tai
+              <br>
+              <em>In Submission</em>
+              <br>
+              <a href="https://www.arxiv.org/abs/2512.07328">Paper</a> /
+              <a href="https://www.arxiv.org/abs/2512.07328">Project Page(comming soon)</a> /
+              <a href="https://github.com/ziyang1106/ContextAnyone">Code(Comming soon)</a>
+               <iframe src="https://ghbtns.com/github-btn.html?user=ziyang1106&repo=ContextAnyone&type=star&count=true&size=small" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+              <p></p>
+            </td>
+          </tr>
+          <tr onmouseout="LD_stop()" onmouseover="LD_start()">
+            <td style="padding:10px;width:35%;vertical-align:middle">
+              <div style="width: 320px; margin: 0 auto; position: relative;">
+                
+                <div id='LD_image_2' style="position: absolute; top: 0; left: 0; opacity: 0; transition: opacity .2s ease-in-out;">
+                  <img src='images/mi.gif' width="320" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                </div>
+                
+                <img src='images/mi.gif' width="320" style="border-radius: 8px; display: block;">
+                
+              </div>
+
               <script type="text/javascript">
-                function cp_start() {
-                  document.getElementById('LD_image').style.opacity = "1";
+                // 4. 更新脚本中的 ID 和函数名，确保不与第一篇论文冲突
+                function LD_start_2() {
+                  document.getElementById('LD_image_2').style.opacity = "1";
                 }
 
-                function cp_stop() {
-                  document.getElementById('LD_image').style.opacity = "0";
+                function LD_stop_2() {
+                  document.getElementById('LD_image_2').style.opacity = "0";
                 }
-                cp_stop()
+                // 初始状态设为隐藏
+                LD_stop_2();
               </script>
             </td>
-            <td style="padding:60px;width:75%;vertical-align:middle">
+            <td style="padding:0px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2403.20193">
                 <papertitle>Motion Inversion for Video Customization</papertitle>
               </a>

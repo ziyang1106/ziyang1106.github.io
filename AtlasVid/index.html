@@ -82,6 +82,22 @@
       <figure class="paper-figure"><a href="assets/method.png" target="_blank" rel="noopener" aria-label="Open the AtlasVid method figure at full size"><img src="assets/method.png" loading="lazy" alt="AtlasVid pipeline: a global semantic generator guides spatiotemporal detail generation, with locality-preserving attention, scaled RoPE, and resolution-agnostic training."></a><figcaption>AtlasVid framework. <a href="https://arxiv.org/html/2605.16649v1#S2.F2">Figure 2 in the paper ↗</a></figcaption></figure>
     </section>
 
+    <section class="wide ablations" aria-labelledby="ablation-title">
+      <h2 id="ablation-title">Ablation studies</h2>
+      <div class="ablation-study">
+        <h3>Global guidance and locality-preserving attention</h3>
+        <p class="section-intro">Global guidance maintains scene consistency, while locality-preserving attention enables resolution extrapolation. All variants are trained at 720p and evaluated at 4K. For the locality comparison, attention between neighboring blocks is disabled to expose the block structure.</p>
+        <figure class="paper-figure"><a href="assets/ablation-attention.png" target="_blank" rel="noopener" aria-label="Open the attention ablation figure at full size"><img src="assets/ablation-attention.png" loading="lazy" width="1706" height="278" alt="Iceberg generation comparison: the full model, without global guidance, with locality-preserving attention, and without locality-preserving attention."></a><figcaption>Attention design ablation. <a href="https://arxiv.org/html/2605.16649v1#S4.F4">Figure 4 in the paper ↗</a></figcaption></figure>
+      </div>
+      <div class="ablation-refinement">
+        <div>
+          <h3>Optional 4K fine-tuning</h3>
+          <p>The base model already generates plausible 4K detail. An optional refinement stage using short 4K clips further improves local realism, as illustrated by the brick textures.</p>
+        </div>
+        <figure class="paper-figure"><a href="assets/ablation-finetuning.png" target="_blank" rel="noopener" aria-label="Open the 4K fine-tuning ablation figure at full size"><img src="assets/ablation-finetuning.png" loading="lazy" width="517" height="552" alt="A brick pier with optional 4K fine-tuning on top and without 4K fine-tuning below, with enlarged texture details."></a><figcaption>4K fine-tuning ablation. <a href="https://arxiv.org/html/2605.16649v1#S5.F5">Figure 5 in the paper ↗</a></figcaption></figure>
+      </div>
+    </section>
+
     <section class="citation text-section" id="citation">
       <div class="section-heading"><h2>BibTeX</h2><button type="button" id="copy-citation">Copy citation</button></div>
       <pre><code id="bibtex">@misc{mai2026atlasvid,

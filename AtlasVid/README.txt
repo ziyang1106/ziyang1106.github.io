@@ -14,6 +14,8 @@ style.css — responsive white/green academic design
 script.js — copy citation, accessible autoplay behavior
 assets/videos — six embedded PowerPoint videos, compressed to approximately 720p for web playback
 assets/method.png — original method figure from the paper
+assets/ablation-attention.png — Figure 4, attention design ablation
+assets/ablation-finetuning.png — Figure 5, optional 4K fine-tuning ablation
 
 Video sources:
 AI@70 - AtlasVid.pptx, slide 1: media2 (purple bird, 3840x2176, 161 frames), media1 (wild dog, 2560x1440, 321 frames).

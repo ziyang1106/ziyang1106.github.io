@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <title>AtlasVid | NeurIPS 2026</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=runtime3">
+  <link rel="stylesheet" href="style.css?v=videotop">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -35,6 +35,13 @@
       </nav>
     </header>
 
+    <section class="wide video-section" id="video" aria-label="AtlasVid overview video">
+      <figure>
+        <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/D_3u87mc6FY?rel=0" title="AtlasVid: 60× faster 4K AI video generation on 2 GPUs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <figcaption><span>Speed, method and results in four minutes</span><a href="https://youtu.be/D_3u87mc6FY" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></figcaption>
+      </figure>
+    </section>
+
     <section id="results" class="wide featured" aria-label="Featured video results">
       <div class="video-grid">
         <figure>
@@ -53,14 +60,6 @@
       <h2>Overview</h2>
       <p>AtlasVid separates global scene structure from local visual detail. A low-resolution, low-frame-rate semantic proxy guides a detail generator through hierarchical, locality-preserving attention. Trained at 720p with lightweight LoRA adaptation, the model scales to 4K and beyond without training on ultra-high-resolution long videos.</p>
       <p>Temporally scaled RoPE extends the generation horizon, while aligned global guidance maintains coherence throughout a continuous shot.</p>
-    </section>
-
-    <section class="wide video-section" id="video" aria-labelledby="video-title">
-      <div class="section-heading"><h2 id="video-title">Video</h2><p>All footage AI-generated · 4 min</p></div>
-      <figure>
-        <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/D_3u87mc6FY?rel=0" title="AtlasVid: 60× faster 4K AI video generation on 2 GPUs" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        <figcaption><span>Speed, method and results in four minutes</span><a href="https://youtu.be/D_3u87mc6FY" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a></figcaption>
-      </figure>
     </section>
 
     <section class="wide runtime" id="runtime" aria-labelledby="runtime-title">
